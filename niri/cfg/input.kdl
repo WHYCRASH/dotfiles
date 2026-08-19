@@ -1,0 +1,22 @@
+input {
+    focus-follows-mouse max-scroll-amount="0%"
+    
+    keyboard {
+        xkb {
+            layout "us"
+        }
+    }
+
+    touchpad {
+        tap
+        accel-speed -0.16
+        accel-profile "adaptive"
+        scroll-method "two-finger"
+        natural-scroll
+        scroll-factor 0.82
+    }
+
+    mouse {
+        accel-profile "flat"
+    }
+}

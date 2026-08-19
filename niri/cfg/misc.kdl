@@ -1,0 +1,40 @@
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+environment {
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    XDG_CURRENT_DESKTOP "niri"
+    XDG_SESSION_TYPE "wayland"
+}
+
+cursor {
+    xcursor-theme "capitaine-cursors"
+    xcursor-size 24
+}
+
+blur {
+    passes 2
+    offset 3.0
+    noise 0.03
+    saturation 1.0
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+switch-events {
+    lid-close {
+        spawn "noctalia" "msg" "session" "lock-and-suspend"
+    }
+}
+
+spawn-at-startup "xhost" "+si:localuser:root"
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}

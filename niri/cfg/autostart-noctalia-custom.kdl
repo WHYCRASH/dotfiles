@@ -1,0 +1,7 @@
+// Startup Applications for the custom Noctalia session.
+
+spawn-at-startup "/home/dautist/.local/bin/noctalia"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=niri"
+spawn-at-startup "systemctl" "--user" "import-environment" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
+spawn-at-startup "gslapper" "/home/dautist/Customization/Wallpapers/default.mp4"

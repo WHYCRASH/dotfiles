@@ -1,0 +1,11 @@
+include "/home/dautist/.config/niri/cfg/animation.kdl"
+include "/home/dautist/.config/niri/cfg/autostart-noctalia-custom.kdl"
+include "/home/dautist/.config/niri/cfg/keybinds.kdl"
+include "/home/dautist/.config/niri/cfg/input.kdl"
+include "/home/dautist/.config/niri/cfg/display.kdl"
+include "/home/dautist/.config/niri/cfg/layout.kdl"
+include "/home/dautist/.config/niri/cfg/rules.kdl"
+include "/home/dautist/.config/niri/cfg/misc.kdl"
+include "/home/dautist/.config/niri/cfg/gestures.kdl"
+
+include "noctalia.kdl"

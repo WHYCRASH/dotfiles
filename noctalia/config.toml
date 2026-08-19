@@ -1,0 +1,16 @@
+[hot_corners]
+enabled = false
+
+
+[audio]
+enable_sounds = true
+sound_volume = 1.0
+
+[theme.templates.user.silent_sddm]
+input_path = "~/Projects/SilentSDDM/integrations/noctalia/silent-sddm.conf.in"
+output_path = "$XDG_STATE_HOME/noctalia/silent-sddm/noctalia.conf"
+post_hook = "python3 ~/Projects/SilentSDDM/integrations/noctalia/noctalia-silent-sddm-sync.py"
+
+[hooks]
+wallpaper_changed = "python3 ~/Projects/SilentSDDM/integrations/noctalia/noctalia-silent-sddm-sync.py"
+colors_changed = "python3 ~/Projects/SilentSDDM/integrations/noctalia/noctalia-silent-sddm-sync.py"

@@ -1,0 +1,4 @@
+output "eDP-1" {
+    // If this is set to 1.25, 1.5, etc., test changing it to 1.0
+    scale 1.0
+}
