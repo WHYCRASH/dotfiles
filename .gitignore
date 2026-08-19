@@ -14,3 +14,8 @@ archive/
 
 # zsh caches (if any remain)
 .zcompdump*
+# Stage 4 — tool caches & backups (not tracked)
+micro/
+mpv/
+kitty/*.bak
+bat/.cache/

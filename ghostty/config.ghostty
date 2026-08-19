@@ -1,0 +1,37 @@
+clipboard-read = allow
+shell-integration-features = ssh-env,ssh-terminfo
+gtk-single-instance = false
+shell-integration = fish
+working-directory = inherit
+clipboard-paste-protection = false
+confirm-close-surface = false
+mouse-scroll-multiplier = 0.22
+
+# ==============================================================================
+# Noctalia Theming
+# ==============================================================================
+theme = noctalia
+background = #000918
+foreground = #35daff
+window-padding-x = 10
+window-padding-y = 10
+font-size = 12
+background-opacity = 0.85
+
+
+
+
+
+
+# ==============================================================================
+# Ghostty Clipboard Codepoint Mapping for Starship Prompt
+# ==============================================================================
+# Replaces Starship icons with clean unicode..
+
+clipboard-codepoint-map = U+2591=U+0020
+clipboard-codepoint-map = U+2592=U+0020
+clipboard-codepoint-map = U+2593=U+0020
+clipboard-codepoint-map = U+1F397=[Ribbon]
+clipboard-codepoint-map = U+F43A=@
+clipboard-codepoint-map = U+E0B4=)
+clipboard-codepoint-map = U+276F=U+003E

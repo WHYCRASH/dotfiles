@@ -1,0 +1,29 @@
+# A TOML linter such as Tombi can use this schema to validate your config.
+# If you encounter any problems, please file an issue at https://github.com/yazi-rs/schemas.
+
+
+#:schema https://yazi-rs.github.io/schemas/keymap.json
+[[mgr.prepend_keymap]]
+on   = "<Enter>"
+run  = "plugin smart-enter"
+desc = "Enter the child directory, or open the file"
+
+prepend_keymap = [
+	# --- Micro-style Selection & Movement ---
+	{ on = [ "ctrl+a" ], run = "select --state=true", desc = "Select all files (Micro Ctrl+A)" },
+	{ on = [ "esc" ],    run = "select --state=false", desc = "Deselect all files" },
+
+	# --- Micro-style File Operations ---
+	{ on = [ "ctrl+c" ], run = "yank",                desc = "Copy selected files (Micro Ctrl+C)" },
+	{ on = [ "ctrl+x" ], run = "yank --cut",          desc = "Cut selected files (Micro Ctrl+X)" },
+	{ on = [ "ctrl+v" ], run = "paste",               desc = "Paste yanked files (Micro Ctrl+V)" },
+	{ on = [ "ctrl+z" ], run = "undo",                desc = "Undo last action (Micro Ctrl+Z)" },
+	{ on = [ "ctrl+d" ], run = "remove",              desc = "Delete files / Move to trash" },
+	{ on = [ "ctrl+r" ], run = "rename --cursor=before_ext", desc = "Rename file" },
+	{ on = [ "ctrl+n" ], run = "create",              desc = "Create a new file or folder" },
+
+	# --- Micro-style UI Overlays ---
+	{ on = [ "ctrl+g" ], run = "help",                desc = "Open Help Cheat Sheet UI (Micro Ctrl+G)" },
+	{ on = [ "ctrl+f" ], run = "search fd",           desc = "Find/Search files (Micro Ctrl+F)" },
+	{ on = [ "ctrl+q" ], run = "quit",                desc = "Quit Yazi (Micro Ctrl+Q)" }
+]
