@@ -1,0 +1,5 @@
+# machine-local, not tracked
+fish_variables
+conf.d/secrets.fish
+backups/
+themes/

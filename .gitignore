@@ -1,0 +1,9 @@
+# fish — machine-local
+fish/fish_variables
+fish/conf.d/secrets.fish
+fish/backups/
+fish/themes/
+.fish_shell/
+# OS
+.DS_Store
+*~

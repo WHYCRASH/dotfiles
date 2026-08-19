@@ -1,0 +1,14 @@
+advisors:
+  - name: default
+    model: meta/muse-spark-1.2-contributor:xhigh
+    tools:
+      - read
+      - ast_grep
+      - ask
+      - glob
+      - lsp
+      - recall
+      - write
+      - edit
+      - bash
+      - eval
