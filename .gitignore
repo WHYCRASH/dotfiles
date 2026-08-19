@@ -7,3 +7,10 @@ fish/themes/
 # OS
 .DS_Store
 *~
+
+# archive — local backups (Stage 2: p10k/zsh)
+.archive/
+archive/
+
+# zsh caches (if any remain)
+.zcompdump*
