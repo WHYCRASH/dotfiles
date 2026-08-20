@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Janice-0.10.0-x86_64",
+    "version": "0.10.0",
+    "raw_update_info": "",
+    "icon_name": "janice-0.10.0-x86_64",
+    "description": "A desktop app for viewing large JSON files",
+    "desktop_name": "Janice",
+    "size_on_disk": 11926008,
+    "command_line_args": "",
+    "path": "/home/dautist/.local/bin/Janice-0.10.0-x86_64.AppImage",
+    "update_url": "",
+    "update_type": "none",
+    "repo_owner": null,
+    "repo_name": null,
+    "allow_prerelease": false
+  }
+]

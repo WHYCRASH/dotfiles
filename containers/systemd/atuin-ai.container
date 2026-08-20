@@ -1,0 +1,18 @@
+[Unit]
+Description=Atuin AI server
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+Image=ghcr.io/atuinsh/atuin-ai-server:latest
+ContainerName=atuinai
+PublishPort=127.0.0.1:8080:8080
+Volume=%h/.config/atuin-ai/config.toml:/etc/atuin-ai/config.toml:ro
+PodmanArgs=--pull=newer
+Environment="OPENAI_API_KEY=sk-g2ToczwxG9H9oP91LsFKeMyaH5dGBA2TsRtR9YXVpJy6wS7zsYrPcvCcfmAHEE95"
+
+[Service]
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

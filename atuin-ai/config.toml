@@ -1,0 +1,14 @@
+port = 8080
+endpoint = "https://opencode.ai/zen/go/v1"
+default_model = "mimo-v2.5"
+
+[api_key]
+env = "OPENAI_API_KEY"
+
+[request.body]
+stream_options = { include_usage = true }
+
+[[models]]
+alias = "mimo-v2.5"
+name = "MiMo v2.5"
+model = "mimo-v2.5"

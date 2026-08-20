@@ -17,7 +17,10 @@ archive/
 # zsh caches (if any remain)
 .zcompdump*
 # Stage 4 — tool caches & backups (not tracked)
-micro/
+# micro — only track bindings/settings, ignore caches
+micro/backups/
+micro/buffers/
+micro/history
 mpv/
 kitty/*.bak
 bat/.cache/
