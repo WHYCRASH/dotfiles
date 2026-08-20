@@ -1,6 +1,8 @@
 # fish — machine-local
 fish/fish_variables
 fish/conf.d/secrets.fish
+bash/secrets.sh
+.env
 fish/backups/
 fish/themes/
 .fish_shell/
