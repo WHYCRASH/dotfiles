@@ -1,14 +1,15 @@
 search_mode = "daemon-fuzzy"
-inline_height = 0
 scroll_exits = false
 show_preview = true
+style = "compact"
+inline_height = 0
+
 
 
 [ai]
 enabled = true
-endpoint = "http://127.0.0.1:8080"
+endpoint = "http://127.0.0.1:8040"
 endpoint_protocol = "oss"
-model_name = "mimo-v2.5"
 
 
 [daemon]
@@ -22,5 +23,22 @@ enabled = true
 
 [sync]
 records = true
-sync_address = "http://127.0.0.1:8080" 
+sync_address = "http://127.0.0.1:8041" 
 auto_sync = true
+
+
+[pty_proxy]
+enabled = true
+
+[theme]
+name = "marine"
+
+
+[[models]]
+model_name = "muse-spark-1.2-contributor"
+model = "use-spark-1.2-contributor"
+name = "muse-spark-1.2-contributor"
+alias = "muse-spark-1.2-contributor" # This satisfies the error condition
+provider = "opencode-go"    
+
+

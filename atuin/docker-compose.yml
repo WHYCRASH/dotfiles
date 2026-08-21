@@ -1,0 +1,22 @@
+services:
+  atuin-ai-server:
+    container_name: atuinai
+    image: ghcr.io/atuinsh/atuin-ai-server@sha256:187785563e46d5c8fba5119abe4aca2fcbed2baf6cd66db5d9f8c23f02973ad3
+    restart: unless-stopped
+    ports:
+      - "8040:8080"
+    volumes:
+      - ./server.toml:/etc/atuin-ai/config.toml:ro,z
+    userns_mode: "keep-id"
+    extra_hosts:
+      - "host.containers.internal:host-gateway"
+    environment:
+      - OPENCODE_API_KEY
+      - ERL_AFLAGS=+sbwt none +sbwtdcpu none +sbwtdio none
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'     
+        reservations:
+          cpus: '0.1'
+

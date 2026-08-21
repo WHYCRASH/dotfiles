@@ -32,3 +32,4 @@ if [[ $- == *i* ]]; then
   alias nano="command micro"
   eval "$(omp completions bash 2>/dev/null)" || true
 fi
+. "$HOME/.cargo/env"

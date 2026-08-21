@@ -1,2 +1,46 @@
-sync_address = "http://localhost:8080"
+sync_address = "http://localhost:8041"
 auto_sync = true
+endpoint = "https://opencode.ai/zen/go/v1/chat/completions"
+default_model = "glm-5.2"
+
+
+[[models]]
+model_name = "muse-spark-1.2-contributor"
+model = "muse-spark-1.2-contributor"
+name = "muse-spark-1.2-contributor"
+alias = "muse-spark-1.2-contributor" 
+provider = "opencode-go"    
+
+
+[[models]]
+alias = "glm-5.2"            
+name = "glm-5.2"        
+model = "glm-5.2" 
+provider = "opencode-go"
+
+[[models]]
+alias = "deepseek-v4-flash"            
+name = "Deepseek v4 Flash"        
+model = "deepseek-v4-flash" 
+provider = "opencode-go"
+
+
+[[models]]
+alias = "qwen3.7-plus"            
+name = "Qwen 3.7 Plus"        
+model = "qwen3.7-plus" 
+provider = "opencode-go"
+
+
+
+
+
+
+
+
+[api_key]
+env = "OPENCODE_API_KEY"
+
+
+[request.body]
+stream_options = { include_usage = true }

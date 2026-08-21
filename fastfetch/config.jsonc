@@ -57,7 +57,7 @@
       "type": "cpu",
       "key": "CPU",
       "temp": true,
-      "format": "{numa-nodes}",
+      "format": "1",
       "shorthand": true
     },
     {

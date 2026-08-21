@@ -6,7 +6,6 @@ edit = [
 play = [
     { run = 'vlc --one-instance --no-qt-video-autoresize "$@"', orphan = true, desc = "Play", for = "unix" }
 ]
-
 [open]
 rules = [
     { mime = "*.txt", use = [ "edit" ] },
@@ -49,6 +48,7 @@ rules = [
     # In this case use file extension instead:
     { url = "*.{ai,eps,ait}", run = "mediainfo" },
 
+
     # Hide metadata by default.
     # Example for image mimetype:
     { mime = "{image}/*", run = "mediainfo --no-metadata" },
@@ -72,3 +72,6 @@ rules = [
 [tasks]
   image_alloc      = 1073741824        # = 1024*1024*1024 = 1024MB
 
+
+[mgr]
+ratio = [25, 45, 30]
